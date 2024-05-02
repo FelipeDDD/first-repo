@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Css</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: rgb(192, 189, 189);
+    }
+
+    header {
+      width: 100%;
+      height: 80px;
+      background-color: white;
+      border: 0px, 0px, 1px, 0px;
+      padding: 16px, 80px;
+      gap: 24px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 24px;
+    }
+
+    header .button-white {
+      color: #0f62fe;
+      border: 2px solid #0f62fe;
+      width: 103px;
+      padding: 16px 12px 16px 12px;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    header .button-blue {
+      background-color: #0f62fe;
+      color: white;
+      border: 2px solid #0f62fe;
+      width: 169px;
+      padding: 16px 12px 16px 12px;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .action-buttons-header {
+      display: flex;
+      gap: 16px;
+    }
+    /*---------------CONTENT----------------*/
+    .content {
+      display: flex;
+      padding: 80px 0px;
+    }
+
+    .content .container {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      padding: 80px;
+    }
+
+    .content .button-white {
+      color: #0f62fe;
+      border: 2px solid #0f62fe;
+      text-decoration: none;
+    }
+
+    .content .button-blue {
+      background-color: #0f62fe;
+      color: white;
+      border: 2px solid #0f62fe;
+      text-decoration: none;
+    }
+
+    .content h1 {
+      line-height: 59.4px;
+      font-size: 54px;
+      font-weight: 700;
+      text-align: left;
+    }
+
+    .content p {
+      margin-top: 48px;
+      font-size: 18px;
+      line-height: 25.2px;
+      text-align: left;
+      font-weight: 400;
+    }
+
+    .content .left {
+      display: flex;
+      flex-direction: column;
+      width: 600px;
+    }
+    .content .buttons-group {
+      margin-top: 64px;
+      display: flex;
+      height: 56px;
+      gap: 16px;
+    }
+
+    .content .button-white {
+      width: 228px;
+      height: 56px;
+      border: 2px solid #0f62fe;
+      padding: 16px;
+    }
+
+    .content .button-blue {
+      width: 228px;
+      height: 56px;
+      padding: 16px;
+    }
+    /*---------------MIDDLE-CONTENT----------------*/
+    .mcontent {
+      display: flex;
+      padding: 80px 80px;
+    }
+
+    .mcontent .container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      gap: 64px;
+    }
+
+    .subtitle {
+      color: rgba(0, 29, 108, 1);
+      line-height: 20px;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    
+    .subtitle-h2 {
+      line-height: 46.2px;
+      font-size: 42px;
+      font-weight: 700;
+      text-align: center;
+      margin-top: 8px;
+    }
+
+    .p-text {
+      font-size: 18px;
+      line-height: 25.2px;
+      font-weight: 400;
+      color: rgba(33, 39, 42, 1);
+    }
+
+    .frame {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .serjao-with-description {
+      padding: 0 16px;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .frame img {
+      width: 48px;
+      height: 48px;
+      object-fit: cover;
+    }
+
+    .mcontent .button-blue {
+      display: flex;
+      width: 204px;
+      height: 56px;
+      padding: 16px 16px;
+      background-color: #0f62fe;
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      justify-content: center;
+    }
+    /*---------------FOOTER------------*/
+
+    footer {
+      background-color: rgba(242, 244, 248, 1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    footer .container {
+      display:flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 80px;
+    }
+    
+    footer p {
+      margin-top: 48px;
+    }
+
+    footer h2 {
+      margin-top: 8px
+    }
+
+    footer .logo-div {
+      align-items: center;
+      padding: 80px 80px 0 80px;
+    }
+
+    .logos img {
+     width: 200px;
+     height: 32px;
+     object-fit: cover;
+     }
+
+     .logo-div {
+      display:flex;
+      gap: 16px;
+     }
+
+  /*---------------SEGUNDA PÁGINA------------*/
+
+  .top-content {
+      background-color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .top-content .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 80px;
+      gap: 64px;
+     }
+
+    .drawings {
+      display:flex;
+      align-items: center;
+      gap: 64px;
+   }
+
+    .drawings-grid {
+     display:grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 64px;
+    }
+
+  
+   .milho {
+     grid-column: span 2;
+     margin: 0 auto;
+   }
+  
+   @media  (max-width: 800px) {
+    .drawings-grid {
+     grid-template-columns: 1fr;
+     grid-column:disable;
+   }
+   .milho {
+     grid-column: span 1;
+     margin: 0 auto;
+   }
+   }
+
+   .drawings-item {
+      padding: 0 16px;
+      max-width: 468px;
+   }
+
+   .drawings img {
+      width: 96px;
+      height: 96px;
+   }
+
+    .p-description {
+      text-align: center;
+      padding: 16px 16px 0 16px;
+    }
+
+    .button-blue {
+      display: flex;
+      width: 204px;
+      height: 56px;
+      padding: 16px;
+      background-color: #0f62fe;
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      justify-content: center;
+    }
+
+    .bottom-content {
+      background-color: rgba(242, 244, 248, 1);
+      display:flex;
+      text-align: center;
+      padding: 80px;
+    }
+    
+    .rectangle {
+      display: flex;
+      padding: 80px 80px 0 80px;
+      gap: 16px;
+    }
+
+    .square {
+       display: flex;
+       flex-direction: column;
+       background-color: white;
+       padding: 24px;
+       align-items: center;
+       gap: 16px;
+     }
+
+  /*---------------TERCEIRA PÁGINA------------*/
+
+   .bottom-content2 {
+      background-color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+    }
+
+   .bottom-content2 .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 80px;
+    gap: 64px;
+    }
+
+    .bigrectangle {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 16px;
+    }
+
+    .box-description {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      text-align: left;
+      padding: 24px 16px 16px 16px;
+      gap: 16px;
+    }
+
+    .box-description h3 {
+      font-size: 20px;
+      line-height: 22px;
+      font-weight: 700;
+    }
+
+    .box-description p {
+      font-size: 16px;
+      line-height: 22.4px;
+      font-weight: 400;
+    }
+
+    .box-description .p-negrito {
+      font-size: 16px;
+      line-height: 17.6px;
+      font-weight: 500;
+    }
+
+    .JaneDoe {
+      display:flex;
+      gap: 16px;
+      align-items: center;
+    }
+
+  /*---------------TERCEIRA PÁGINA-BOTTOM------------*/
+
+    .box-description-bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 16px;
+    }
+
+    .bottom-content .container {
+      padding: 0;
+    }
+
+    .bottom-content h3 {
+      font-size: 18px;
+      line-height: 25.2px;
+      font-weight: 400;
+    }
+
+    .bottom-content p {
+      font-size: 18px;
+      line-height: 25.2px;
+      font-weight: 400;
+      color: rgba(105, 112, 119, 1);
+    }
+
+    .bottom-content .contact-text {
+      font-size: 16px;
+      line-height: 16px;
+      font-weight: 500;
+      color: rgba(15, 98, 254, 1);
+    }
+
+    .contact-button {
+      width: 180px;
+      height: 48px;
+      border: 2px solid rgba(15, 98, 254, 1);
+      padding: 16px 12px;
+    }
+      /*---------------QUARTA PÁGINA / PRICING------------*/
+
+    .pricing-content {
+      background-color: white;
+      display: flex;
+      text-align: center;
+      padding: 80px;
+    }
+
+    .first-p {
+      margin: 0 auto;
+      margin-top: 48px;
+      max-width: 1280px;
+    }
+    
+    .desconto-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .control-box {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      gap: 16px;
+      margin-bottom: 48px;
+    }
+
+    .vinte-off-button {
+      background-color: rgba(242, 244, 248, 1);
+      font-size: 12px;
+      line-height: 16.8px;
+      font-weight: 400;
+      width: 67px;
+      height: 20px;
+      border-radius: 10px;
+      margin-top: 28px;
+      margin-right: 130px;
+    }
+    
+    .p-title {
+      font-size: 32px;
+      line-height: 35.2px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .price-square {
+      display: flex;
+      gap: 24px;
+    }
+
+    .box-plan {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding: 48px 24px ;
+      gap: 32px;
+    }
+    
+    .box-dolar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .pricing-button-blue {
+      display: flex;
+      width: 171px;
+      height: 56px;
+      padding: 16px;
+      background-color: #0f62fe;
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      justify-content: center;
+    }
+
+    .p-price {
+      font-size: 14px;
+      line-height: 19.6px;
+      font-weight: 400;
+    }
+
+    .price-list {
+      align-items: left;
+      position: outside;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .price-list li {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 25.2px;
+    }
+
+    /*---------------ÚLTIMA PÁGINA------------*/
+
+    .faq-content {
+      display: flex;
+      background-color: rgba(242, 244, 248, 1);
+      text-align: center;
+      padding: 80px;
+    }
+
+    .faq-content .container {
+      display: flex;
+      flex-direction: column;
+      gap: 64px;
+    }
+
+    .faq-rectangle {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      margin: 0 auto;
+    }
+    
+    .box-question {
+      display: flex;
+      justify-content: space-between;
+      background-color: white;
+      width: 900px;
+      height: 56px;
+      padding: 16px;
+      gap: 16px;
+      border: 1px solid rgba(221, 225, 230, 1)
+    }
+
+    .p-faq-question {
+      font-size: 20px;
+      line-height: 22px;
+      font-weight: 700;
+    }
+    /*---------------ÚLTIMA PÁGINA BOTTOM------------*/
+
+    .final-content {
+      background-color: white;
+      display: flex;
+      text-align: center;
+      gap: 48px;
+    }
+
+    .final-content .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 80px;
+      gap: 48px;
+    }
+
+    .box-final {
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+    }
+
+    .button-white {
+      display: flex;
+      justify-content: center;
+      font-size: 20px;
+      color :#0f62fe;
+      width: 228px;
+      height: 56px;
+      border: 2px solid #0f62fe;
+      padding: 16px;
+    }
+
+    .final-buttons {
+      display: flex;
+      gap: 16px;
+    }
+/*---------------LAST-CONTENT------------*/
+    .last-content {
+      display: flex;
+      padding: 48px 80px;
+      background-color: rgba(105, 112, 119, 1);
+    }
+
+    .last-content .container {
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+    }
+
+    .last-header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .box-email {
+      display: flex;
+      background-color: white;
+      color: rgba(105, 112, 119, 1);
+      display: flex;
+      padding: 13px 16px;
+      gap: 8px;
+      text-align: center;
+    }
+
+    .preto {
+      display: flex;
+      justify-content: space-between;
+      gap:16px;
+    }
+
+    .logo-copyright {
+      object-fit: contain;
+      width: 181px;
+      height: 39px;
+    }
+
+    .button-subscribe {
+      display: flex;
+      width: 132px;
+      height: 48px;
+      padding: 16px 12px;
+      background-color: #0f62fe;
+      color: white;
+      font-size: 20px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .p-email {
+      font-size: 16px;
+      line-height: 22.4px;
+      font-weight: 400;
+      padding-top: 1px;
+    }
+
+    .last-rectangle {
+      display: flex;
+      justify-content: space-between;
+      gap: 48px;
+    }
+
+    .box-column {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      padding-top: 12px;
+      gap: 16px;
+      max-width: 284px;
+      width: 100%;
+    }
+
+    .box-column h4 {
+      font-size: 18px;
+      line-height: 19.8px;
+      font-weight: 700;
+      color: white;
+      padding: 12px 0;
+    }
+
+    .box-column p {
+      font-size: 16px;
+      line-height: 16px;
+      font-weight: 500;
+      color: white;
+    }
+    
+    .social-icons {
+      object-fit: contain;
+      height: 24px;
+    }
+
+    .final-footer {
+      display: flex;
+      justify-content: space-between; 
+      padding: 12px 12px 12px 0;
+    }
+
+    .final-footer p {
+      color: white;
+    }
+
+    .box-contact {
+      display: flex;
+      gap: 16px;
+    }
+
+    .box-contact p {
+      font-size: 16px;
+      line-height: 16px;
+      font-weight: 500;
+      color: white;
+      padding: 12px 8px;
+    }
+
+
+  </style>
+
+  <body>
+    <header>
+      <div class="container">
+        <img src="./logo.svg" alt="erro mortau" />
+        <ul>
+          <li>Eleven</li>
+          <li>Twelve</li>
+          <li>Thirteen</li>
+          <li>Sixteen</li>
+        </ul>
+        <div class="action-buttons-header">
+          <a href="#" class="button-white">Log in</a>
+          <a href="#" class="button-blue">Start Free Trial</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="content" style="background-color: rgba(242, 244, 248, 1)">
+      <div class="container">
+        <div class="left">
+          <h1>Host Design Meetings From Anywhere</h1>
+
+          <p>
+            Unlock your design skills to create beautiful websites and apps with
+            a poweful and easy-to-use tool.
+          </p>
+
+          <div class="buttons-group">
+            <a href="#" class="button-blue">Primary Action -></a>
+            <a href="#" class="button-white">Secondary Action</a>
+          </div>
+        </div>
+
+        <img src="./38.png" />
+      </div>
+    </div>
+
+    <div class="mcontent" style="background-color: white">
+      <div class="container">
+        <div>
+          <p class="subtitle">THE TOOLS YOU NEED</p>
+          <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+        </div>
+
+        <div class="frame">
+          <div class="serjao-with-description">
+            <img src="./S1.png" />
+            <span class="p-text">
+              Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.
+            </span>
+          </div>
+          <div class="serjao-with-description">
+            <img src="./S2.png" />
+            <span class="p-text">
+              Id eros pellentesque facilisi id mollis faucibus commodo enim.
+            </span>
+          </div>
+          <div class="serjao-with-description">
+            <img src="./S3.png" />
+            <span class="p-text">Nunc, pellentesque velit malesuada non massa arcu.</span>
+          </div>
+          <div class="serjao-with-description">
+            <img src="./S4.png" />
+            <span class="p-text">
+              Imperdiet purus pellentesque sit mi nibh sit integer faucibus.
+            </span>
+          </div>
+        </div>
+
+        <a href="#" class="button-blue">Primary Action</a>
+      </div>
+    </div>
+
+
+    <footer>
+      <div class="container">
+          <div>
+            <span class="subtitle">YOU ARE IN GOOD COMPANY</span>
+            <h2 class="subtitle-h2">Bibendum amet at molestie mattis.</h2>
+          </div>
+
+          <p class="p-text">
+          Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit nunc in eros scelerisque sed. Commodo in viverra nunc, ullamcorper ut.
+          Non, amet, aliquet scelerisque nullam sagittis, pulvinar. Fermentum scelerisque sit consectetur hac mi. Mollis leo eleifend ultricies purus iaculis.
+          </p>
+
+          <div>
+            <div class="logo-div">
+            <img src="M1.png">
+            <img src="M2.png">
+            <img src="M3.png">
+            <img src="M4.png">
+            <img src="M5.png">
+            <img src="M6.png">
+          </div>
+        </div>
+    </footer>
+
+    <!-----------------SEGUNDA PAGINA /TOP-CONTENT-------------->
+
+    <div class="top-content">
+      <div class="container">
+       
+        <div>
+          <span class="subtitle"> CAPTION </span>
+          <h2 class="subtitle-h2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Bibendum amet at molestie mattis.</h2>
+        </div>
+
+        <div class="drawings-grid">
+          <div class="drawings-item">
+           <img src="draw1.png">
+           <p class="p-description">Nibh nullam vitae semper pharetra sit enim id. Ut eu non massa nec. Proin eget semper orci suspendisse in ornare adipiscing phasellus mauris. Velit faucibus at habitasse tempor sit odio ac commodo dui.</p>
+          </div>
+
+          <div class="drawings-item">
+            <img src="draw2.png">
+            <p class="p-description">Sed et pulvinar donec sed et, nisl dolor amet. Mollis aliquet volutpat ullamcorper ac sed lectus iaculis. Fringilla sed placerat commodo bibendum integer. Diam ut magna eleifend consectetur.</p>
+          </div>
+
+          <div class="drawings-item">
+            <img src="draw3.png">
+            <p class="p-description">Nibh nullam vitae semper pharetra sit enim id. Ut eu non massa nec. Proin eget semper orci suspendisse in ornare adipiscing phasellus mauris. Velit faucibus at habitasse tempor sit odio ac commodo dui.</p>
+           </div>
+
+           <div class="drawings-item">
+             <img src="draw4.png">
+             <p class="p-description">Sed et pulvinar donec sed et, nisl dolor amet. Mollis aliquet volutpat ullamcorper ac sed lectus iaculis. Fringilla sed placerat commodo bibendum integer. Diam ut magna eleifend consectetur.</p>
+           </div>
+
+           <div class="drawings-item milho">
+            <img src="draw1.png">
+            <p class="p-description">Sed et pulvinar donec sed et, nisl dolor amet. Mollis aliquet volutpat ullamcorper ac sed lectus iaculis. Fringilla sed placerat commodo bibendum integer. Diam ut magna eleifend consectetur.</p>
+          </div>
+       </div>
+        <!-- <div class="drawings">
+           <div class="drawings-item">
+            <img src="draw1.png">
+            <p class="p-description">Nibh nullam vitae semper pharetra sit enim id. Ut eu non massa nec. Proin eget semper orci suspendisse in ornare adipiscing phasellus mauris. Velit faucibus at habitasse tempor sit odio ac commodo dui.</p>
+           </div>
+           <div class="drawings-item">
+             <img src="draw2.png">
+             <p class="p-description">Sed et pulvinar donec sed et, nisl dolor amet. Mollis aliquet volutpat ullamcorper ac sed lectus iaculis. Fringilla sed placerat commodo bibendum integer. Diam ut magna eleifend consectetur.</p>
+           </div>
+        </div>
+
+        <div class="drawings">
+          <div class="drawings-item"> 
+          <img src="draw3.png">
+          <p class="p-description">Nunc amet, tempor morbi ligula ut faucibus gravida. Accumsan, suspendisse mus quisque pellentesque id vulputate hendrerit. Donec ipsum nibh elementum platea proin egestas gravida consectetur sit.</p>
+          </div>
+          <div class="drawings-item">
+            <img src="draw4.png">
+            <p class="p-description">Pellentesque auctor adipiscing lacus viverra. Neque, nulla in amet eget. Arcu, nibh purus urna amet sagittis quis tellus etiam eget. Ultrices egestas a tristique aliquet odio varius.</p>
+          </div>
+        </div> -->
+
+        <div class="button-blue">Primary Action</div>
+
+      </div>
+    </div>
+
+    <!-----------------BOTTOM CONTENT-------------->
+
+    <div class="bottom-content">
+      <div class="container">
+       
+        <div>
+          <span class="subtitle"> TESTIMONIALS </span>
+          <h2 class="subtitle-h2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Bibendum amet at molestie mattis.</h2>
+        </div>
+        
+        
+          <div class="rectangle">
+            <div class="square"> 
+              <img src="logoZoomerr.png">
+              <p class="p-text">Malesuada facilisi libero, nam eu. Quis pellentesque tortor a elementum ut blandit sed pellentesque arcu. Malesuada in faucibus risus velit diam. Non, massa ut a arcu, fermentum, vel interdum.</p>
+              <img src="User-thumb.png">
+              <div>
+                <h2>Author Name</h2>
+                <p>Role</p>
+              </div>
+            </div>
+
+            <div class="square"> 
+              <img src="logoArtVenue.png">
+              <p class="p-text">Nisl vitae viverra dignissim nibh. Nibh imperdiet integer vitae consequat adipiscing pellentesque. Sed amet tincidunt morbi non sed donec mollis pharetra neque.</p>
+              <img src="User-thumb.png">
+              <div>
+                <h2>Author Name</h2>
+                <p>Role</p>
+              </div>
+            </div>
+           </div>
+      </div>
+    </div>
+    <!-----------------TERCEIRA PÁGINA-------------->
+
+    <div class="bottom-content2">
+      <div class="container"> 
+
+        <div>
+          <span class="subtitle"> FROM OUR BLOG </span>
+          <h2 class="subtitle-h2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Bibendum amet at molestie mattis.</h2>
+        </div>
+
+        <div class="bigrectangle">
+          <div style="border:1px solid rgba(221, 225, 230, 1); padding-bottom: 80px">
+            <img src="quadradocinza.png">
+            <div class="box-description">
+              <div>  
+                <p class="p-negrito">Category</p>
+                <h3>Article Title</h3>
+              </div>
+              <p>Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.</p>
+              <div class="JaneDoe">
+                <img src="User-thumb.png">
+                <div>
+                  <p class="p-negrito">Jane Doe</p>
+                  <p style="color:rgba(105, 112, 119, 1);">Senior Designer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="border:1px solid rgba(221, 225, 230, 1)">
+            <img src="quadradocinza.png">
+            <div class="box-description">
+              <div>  
+                <p class="p-negrito">Category</p>
+                <h3>Article Title</h3>
+              </div>
+              <p>Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.</p>
+              <div class="JaneDoe">
+                <img src="User-thumb.png">
+                <div>
+                  <p class="p-negrito">Jane Doe</p>
+                  <p style="color:rgba(105, 112, 119, 1);">Senior Designer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="border:1px solid rgba(221, 225, 230, 1)">
+            <img src="quadradocinza.png">
+            <div class="box-description">
+              <div>  
+                <p class="p-negrito">Category</p>
+                <h3>Article Title</h3>
+              </div>
+              <p>Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.</p>
+              <div class="JaneDoe">
+                <img src="User-thumb.png">
+                <div>
+                  <p class="p-negrito">Jane Doe</p>
+                  <p style="color:rgba(105, 112, 119, 1);">Senior Designer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="border:1px solid rgba(221, 225, 230, 1)">
+            <img src="quadradocinza.png">
+            <div class="box-description">
+              <div>  
+                <p class="p-negrito">Category</p>
+                <h3>Article Title</h3>
+              </div>
+              <p>Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.</p>
+              <div class="JaneDoe">
+                <img src="User-thumb.png">
+                <div>
+                  <p class="p-negrito">Jane Doe</p>
+                  <p style="color:rgba(105, 112, 119, 1);">Senior Designer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="button-blue">Primary Action</div>
+    </div>
+  </div>
+        <!-----------------BOTTOM-PÁGINA-3-------------->
+
+    <div class="bottom-content">
+      <div class="container">
+
+        <div>
+          <span class="subtitle"> THE TEAM </span>
+          <h2 class="subtitle-h2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Bibendum amet at molestie mattis.</h2>
+        </div>
+
+        <div class="bigrectangle">
+
+          <div class="box-description-bottom">
+            <img src="pic1.png">
+
+            <div>
+              <h3>Darrell Steward</h3>
+              <p> UI Designer & Co-founder</p>
+            </div>
+
+            <img src="icons-contact.png">
+
+            <div class="contact-button contact-text">Contact Darrel</div>
+          </div>
+           
+          <div class="box-description-bottom">
+            <img src="pic2.png">
+
+            <div>
+              <h3>Darrell Steward</h3>
+              <p> UI Designer & Co-founder</p>
+            </div>
+
+            <img src="icons-contact.png">
+
+            <div class="contact-button contact-text">Contact Darrel</div>
+          </div>
+
+          <div class="box-description-bottom">
+            <img src="pic3.png">
+
+            <div>
+              <h3>Darrell Steward</h3>
+              <p> UI Designer & Co-founder</p>
+            </div>
+
+            <img src="icons-contact.png">
+
+            <div class="contact-button contact-text">Contact Darrel</div>
+          </div>
+
+          <div class="box-description-bottom">
+            <img src="pic4.png">
+
+            <div>
+              <h3>Darrell Steward</h3>
+              <p> UI Designer & Co-founder</p>
+            </div>
+
+            <img src="icons-contact.png">
+
+            <div class="contact-button contact-text">Contact Darrel</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <!-----------------QUARTA PÁGINA / PRICING-------------->
+
+    <div class="pricing-content">
+      <div class="container">
+
+        <div>
+          <span class="subtitle"> PRICING </span>
+          <h2 class="subtitle-h2"> Bibendum amet at molestie mattis.</h2>
+          <p class="p-text first-p">Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit nunc in eros scelerisque sed. Commodo in viverra nunc, ullamcorper ut. Non, amet, aliquet scelerisque nullam sagittis, pulvinar. Fermentum scelerisque sit consectetur hac mi. Mollis leo eleifend ultricies purus iaculis.</p>
+        </div>
+ 
+        <div class="desconto-box">
+          <div class="vinte-off-button">20% OFF</div>
+          <div class="control-box">
+            <p class="p-text">Yearly</p>
+            <img src="Controls.png">
+            <p class="p-text">Monthly</p>
+          </div>
+        </div>
+
+        <div class="price-square">
+          <div class="box-plan">
+            <div>
+              <p class="p-title">Freelancer</p>
+              <p class="p-text">Quisque donec nibh diam tellus integer eros.</p>
+            </div>
+
+            <div class="box-dolar">
+              <img src="p35.png">
+              <img src="p25.png">
+              <p class="p-price">$25 USD per month, paid annually</p>
+            </div>
+
+            <div class="pricing-button-blue">Get Started</div>
+
+            <ul class="price-list">
+              <li><img src="check.png"> Feature Eleven</li>
+              <li><img src="check.png"> Feature Twelve</li>
+              <li><img src="check.png"> Feature Thirteen</li>
+              <li><img src="check.png"> Feature Fourteen</li>
+              <li><img src="check.png"> Feature Fifteen</li>
+            </ul>
+          </div>
+
+          <div class="box-plan">
+            <div>
+              <p class="p-title">Professional</p>
+              <p class="p-text">Quisque donec nibh diam tellus integer eros.</p>
+            </div>
+
+            <div class="box-dolar">
+              <img src="p65.png">
+              <img src="p55.png">
+              <p class="p-price">$55 USD per month, paid annually</p>
+            </div>
+
+            <div class="pricing-button-blue">Get Started</div>
+
+            <ul class="price-list">
+              <li><img src="check.png"> Feature Eleven</li>
+              <li><img src="check.png"> Feature Twelve</li>
+              <li><img src="check.png"> Feature Thirteen</li>
+              <li><img src="check.png"> Feature Fourteen</li>
+              <li><img src="check.png"> Feature Fifteen</li>
+              <li><img src="check.png"> Feature Sixteen</li>
+              <li><img src="check.png"> Feature Seventeen</li>
+              <li><img src="check.png"> Feature Eighteen</li>
+            </ul>
+          </div>
+
+          <div class="box-plan">
+            <div>
+              <p class="p-title">Agency</p>
+              <p class="p-text">Quisque donec nibh diam tellus integer eros.</p>
+            </div>
+
+            <div class="box-dolar">
+              <img src="p125.png">
+              <img src="p95.png">
+              <p class="p-price">$95 USD per month, paid annually</p>
+            </div>
+
+            <div class="pricing-button-blue">Get Started</div>
+
+            <ul class="price-list">
+              <li><img src="check.png"> Feature Eleven</li>
+              <li><img src="check.png"> Feature Twelve</li>
+              <li><img src="check.png"> Feature Thirteen</li>
+              <li><img src="check.png"> Feature Fourteen</li>
+              <li><img src="check.png"> Feature Fifteen</li>
+              <li><img src="check.png"> Feature Sixteen</li>
+              <li><img src="check.png"> Feature Seventeen</li>
+              <li><img src="check.png"> Feature Eighteen</li>
+              <li><img src="check.png"> Feature Nineteen</li>
+              <li><img src="check.png"> Feature Twenty</li>
+              <li><img src="check.png"> Feature Thirty</li>
+              <li><img src="check.png"> Feature Forty</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-----------------ÚLTIMA PÁGINA-------------->
+
+    <div class="faq-content">
+      <div class="container">
+  
+        <div>
+          <span class="subtitle"> FREQUENTLY ASKED QUESTIONS </span>
+          <h2 class="subtitle-h2"> Bibendum amet at molestie mattis.</h2>
+        </div>
+
+        <div class="faq-rectangle">
+          <div class="box-question">
+            <p class="p-faq-question">Who should use the app?</p>
+            <img src="plus.png">
+          </div>
+          <div class="box-question">
+            <p class="p-faq-question">What is included with my subscription?</p>
+            <img src="plus.png">
+          </div>
+          <div class="box-question">
+            <p class="p-faq-question">How do I get paid?</p>
+            <img src="plus.png">
+          </div>
+          <div class="box-question">
+            <p class="p-faq-question">Is my personal information safe?</p>
+            <img src="plus.png">
+          </div>
+          <div class="box-question">
+            <p class="p-faq-question">How can we get in touch?</p>
+            <img src="plus.png">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="final-content">
+      <div class="container">
+
+        <div class="box-final">
+          <h2 class="subtitle-h2"> Bibendum amet at molestie mattis.</h2>
+          <p class="p-text">Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit nunc in eros scelerisque sed. Commodo in viverra nunc, ullamcorper ut. Non, amet, aliquet scelerisque nullam sagittis, pulvinar. Fermentum scelerisque sit consectetur hac mi. Mollis leo eleifend ultricies purus iaculis.</p>
+        </div>
+
+        <div class="final-buttons">
+          <div class="button-blue">Primary Action</div>
+          <div class="button-white">Secondary Action</div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="last-content">
+      <div class="container">
+
+          <div class="last-header">
+              <img class="logo-copyright" src="logo-empresa.png">
+              <div class="preto">
+                <div class="box-email">
+                   <img src="envelope.png">
+                    <p class="p-email">Enter your email to get the latest news...</p>
+                </div>
+                <div class="button-subscribe">Subscribe</div>
+              </div>
+          </div>
+
+          <img src="line.png">
+
+          <div class="last-rectangle">
+
+            <div class="box-column">
+              <h4> Column One</h4>
+              <p>Twenty One</p>
+              <p>Thirty Two</p>
+              <p>Fourty Three</p>
+              <p>Fifty Four</p>
+            </div>
+
+            <div class="box-column">
+              <h4> Column Two</h4>
+              <p>Sixty Five</p>
+              <p>Seventy Six</p>
+              <p>Eighty Seven</p>
+              <p>Ninety Eight</p>
+            </div>
+
+            <div class="box-column">
+              <h4> Column Three</h4>
+              <p>One Two</p>
+              <p>Three Four</p>
+              <p>Five Six</p>
+              <p>Seven Eight</p>
+            </div>
+
+            <div class="box-column">
+              <h4> Column Four</h4>
+                <div>
+                  <img src="appstore.png">
+                  <img src="googleplay.png">
+                </div>
+
+              <h4>Join Us</h4>
+              <img class="social-icons" src="social-icons.png">
+            </div>
+          </div>
+
+          <img src="line.png">
+
+          <div class="final-footer">
+            <p class="p-price"> CompanyName @ 202X. All rights reserved. </p>
+            <div class="box-contact">
+              <p>Eleven</p>
+              <p>Twelve</p>
+              <p>Thirteen</p>
+            </div>
+          </div>
+      </div>
+    </div>
+
+  </body>
+</html>
